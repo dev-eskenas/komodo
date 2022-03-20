@@ -1943,7 +1943,7 @@ void komodo_args(char *argv0)
         }
         else if ( strcmp("VRSC",ASSETCHAINS_SYMBOL) == 0 )
             dpowconfs = 0;
-        else if ( ASSETCHAINS_PRIVATE != 0 )
+        else if ( strcmp("ESKENAS",ASSETCHAINS_SYMBOL) != 0 && ASSETCHAINS_PRIVATE != 0 )
         {
             fprintf(stderr,"-ac_private for a non-PIRATE chain is not supported. The only reason to have an -ac_private chain is for total privacy and that is best achieved with the largest anon set. PIRATE has that and it is recommended to just use PIRATE\n");
             StartShutdown();
